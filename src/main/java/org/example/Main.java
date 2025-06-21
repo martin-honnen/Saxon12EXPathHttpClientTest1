@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws SaxonApiException {
         Processor processor = new Processor();
 
-        processor.registerExtensionFunction((ExtensionFunctionDefinition) new SendRequestFunction());
+        processor.registerExtensionFunction(new SendRequestFunction());
 
         XsltCompiler xsltCompiler = processor.newXsltCompiler();
 
